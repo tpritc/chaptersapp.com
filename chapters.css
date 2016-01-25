@@ -56,6 +56,14 @@ body {
     }
 }
 
+@media screen and (min-width: 768px) {
+    .center-desktop {
+        left: 33.333%;
+        top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
