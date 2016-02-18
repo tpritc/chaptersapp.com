@@ -47,11 +47,13 @@ body {
   margin-top: 28px;
 }
 
+.cover-images img {
+    padding-bottom: 20px;
+}
 
 @media screen and (max-width: 767px) {
     .center-mobile {
         left: 25%;
-        top: 20px;
         padding-bottom: 20px;
     }
 }
