@@ -39,13 +39,31 @@
         <hr>
         <div class="row marketing">
             <div class="col-sm-12">
+                <h3>Podcast Chapters 1.3 <small>Released November 20, 2017</small></h3>
+                <p>This update simply would not have been possible without the incredible work of <a href="https://twitter.com/bjoreman">Fredrik Björeman</a>, who ported the entire app to Swift 3. This was no small task, and I'm incredibly indebted to him.</p>
+                <p>In this update, Podcast Chapters gets a couple of new features, and fixes a few bugs that managed to creep through.</p>
+                <ul>
+                    <li><strong>Drag-and-Drop:</strong> Fredrik has gone through and enabled drag-and-drop all over the app. You can now drag images onto the cover art or chapter image areas, saving you from using the file picker every time.</li>
+                    <li><strong>Export Chapters as Cue Files:</strong> As of Podcast Chapters 1.2 you could import chapter markers from <code>cue</code> files. Well now you can export to them as well! Note: Cue files only allow for a title and a timestamp, so unfortunately any URL or images associated with the chapter aren't exported.</li>
+                    <li><strong>Export Chapters to Show Notes:</strong> You can now export your chapter markers in a show-note-friendly text format, perfect for listeners who don't have a client that supports MP3 Chapter Markers.</li>
+                    <li><strong>Bugfixes:</strong> Squashed a number of bugs, including:</li>
+                    <ul>
+                        <li>Dismissing the import dialog panel would crash the app before (thanks to <a href="http://danieloskarsson.com/">Daniel Oskarsson</a> for sending me their bug report).</li>
+                        <li>The eagle-eyed among you might've noticed that 'Chapter Images' was incorrectly titled 'Chapter Information' in the last version. We've fixed that.</li>
+                    </ul>
+                </ul>
+                <p>The minimum macOS version in this update has changed to macOS Sierra.</p>
+            </div>
+        </div>
+        <div class="row marketing">
+            <div class="col-sm-12">
                 <h3>Podcast Chapters 1.2 <small>Released September 5, 2016</small></h3>
                 <img src="../images/screenshot-layout-2.png" style="width: 100%"/>
                 <p>In this big update, Podcast Chapters gets a ton of new features, helping you with that annoying last part of the podcast process.</p>
                 <ul>
                     <li><strong>Metadata:</strong> Podcast Chapters now lets you update all other kinds of MP3 metadata for publishing your podcast, including the name of your podcast, the episode's title, and your show art.</li>
                     <li><strong>Presets:</strong> You can now save a preset for a show, letting you quickly and easily fill information about the podcast, without having to find the pesky show art each time.</li>
-                    <li><strong>Import Chapters:</strong> You can now import your chapters from cue</li>
+                    <li><strong>Import Chapters:</strong> You can now import your chapters from cue files.</li>
                     <li><strong>Chapter Artwork:</strong> You can now add artwork to a chapter marker! Give it a try!</li>
                     <li><strong>Bugfixes:</strong> Squashed a number of bugs, including:</li>
                     <ul>
@@ -59,7 +77,7 @@
         <div class="row marketing">
             <div class="col-sm-12">
                 <h3>Podcast Chapters 1.1 <small>Released January 29, 2016</small></h3>
-                <p>In this release, <a href="https://twitter.com/tpritc/status/693053640890830848">Chapters has been renamed Podcast Chapters</a>.</p>
+                <p>In this release, Chapters has been renamed Podcast Chapters.</p>
                 <ul>
                     <li>Podcast Chapters now works nicely with VoiceOver.</li>
                     <li>Podcast Chapters will now convert your MP3 file to use ID3 v2.3 tags. No more <a href="http://chaptersapp.com/support/id3-version/">messing around in iTunes</a> to change the tag versions!</li>
