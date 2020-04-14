@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../chapters.css">
+    <title>Podcast Chapters &mdash; Frequently Asked Questions</title>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row marketing">
+            <div class="col-xs-12" style="text-align: center;">
+                <h1>Podcast Chapters</h1>
+                <h2>The JSON Export</h2>
+                <br><br>
+            </div>
+            <div class="col-xs-12">
+                <p>Thanks for your interest in Podcast Chapters. If your question isn't answered in this FAQ, feel free to reach out to me on <a href="https://twitter.com/bjoreman">Twitter</a> and I'll be sure to help you out.</p>
+                <p><a href="../index.html">← Return to Podcast Chapters</a></p>
+            </div>
+        </div>
+        <hr>
+        <div class="row marketing">
+            <div class="col-sm-12">
+                <h3>What is the JSON export feature?</h3>
+                <p>The JSON export is new in Podcast Chapters 2.X. You can find it in the <b>Podcast</b> menu. When you export, information about your podcast episode is written in a standard JSON file into the folder you choose. Additionally, any artwork in your episode is also written to separate image files and refered to in the JSON data.</p>
+            </div>
+            <div class="col-sm-12">
+                <h3>What can I use this for?</h3>
+                <p>Export to JSON is very much the kind of feature you don't need if you don't know you do. The main point is to provide a way to use the information in your podcast episode in more places, places I as the app creator may never even imagine.</p>
+                <p>Perhaps you want to generate show notes in a particular format, use the podcast information to create a Tweet, put it in a database, or something completely different. JSON provides a reasonable format which is easy to work with for both humans and machines.</p>
+                <p>(By the way, <a href="mailto:contact@bjoreman.com">I would love to hear</a> what you use this feature for!)</p>
+            </div>
+            <div class="col-sm-12">
+                <h3>Do you have an example?</h3>
+                <p>Why, yes, I do. If you check the box <b>"Also create web player page"</b>, Podcast Chapters will generate a HTML page (along with separate CSS and Javascript files) with a standards based audio player, complete with chapter support, artwork display and playback speed. <a href="https://www.bjoreman.com/test/player.html">Here's an example page.</a></p>
+                <p>You can upload the created files (podcast.js, any artwork images, player.html, player.css, and player.js) straight to a web server and use to let people listen to your podcast. You can also, of course, change the files any way you like to suit your needs.</p>
+                <p>For example, if you host your finished podcast files on a service such as Libsyn, you can change either the src property of the player, or the file name in podcast.js to point to Libsyn instead of a file in the same directory. This way, your download and listening stats will be collected as usual.</p>
+                <p>Another customization is of course to change the style to reflect your own site. Just alter - or throw away - player.css in any way you like. Everything is hopefully pretty basic. If not, <a href="mailto:contact@bjoreman.com">please tell me</a> what I can improve!</p>
+                <p>The generated player reads all information from podcast.js, so you can re-use the same one as much as you like. podcast.js has the exact same contents as podcast.json, but wrapped up in a way which makes it easier to use with Javascript on a web page.</p>
+            </div>      
+        </div>
+    </div>
+</body>
+</html>
