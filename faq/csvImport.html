@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../chapters.css">
+    <title>Podcast Chapters &mdash; Frequently Asked Questions</title>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row marketing">
+            <div class="col-xs-12" style="text-align: center;">
+                <h1>Podcast Chapters</h1>
+                <h2>CSV Import</h2>
+                <br><br>
+            </div>
+            <div class="col-xs-12">
+                <p>Thanks for your interest in Podcast Chapters. If your question isn't answered in this FAQ, feel free to reach out to me on <a href="https://twitter.com/bjoreman">Twitter</a> and I'll be sure to help you out.</p>
+                <p><a href="../index.html">← Return to Podcast Chapters</a></p>
+            </div>
+        </div>
+        <hr>
+        <div class="row marketing">
+            <div class="col-sm-12">
+                <h3>What is CSV import?</h3>
+                <p>Podcast Chapters 2.6 lets you import podcast information from <a href="https://en.wikipedia.org/wiki/Comma-separated_values">CSV files</a> - text files with values separated by commas, a format supported by, for example, applications such as Excel and Numbers.</p>
+                <p>CSV import is useful if you have podcast information already entered and want to speed up getting it into Podcast Chapters.</p>
+                <p>The CSV import format lets you import not only basic chapter markers, but also URL:s, images, as well as description and other information for the podcast itself.</p>
+                <p>A common use case would be to enter the podcast information in a spreadsheet app like Excel or Numbers, then export it in CSV format and drag the file onto Podcast Chapters to set all the information at once.</p>
+            </div>
+            <div class="col-sm-12">
+                <h3>What is the format?</h3>
+                <p>By default, comma is used as the separator character between fields, but you can change to tab or semicolon in Podcast Chapters' preferences window.</p>
+                <p>If you need to include the separator inside a value, the value needs to be surrounded by double quotes. If there are also double quotes in the value, they need to be doubled. Most apps supporting CSV export should handle this automatically.</p>
+                <h4>A note on images</h4>
+                <p>For security reasons, Podcast Chapters will need your permission each time an image is read from a new folder. When this happens, a dialog will be displayed asking you to select the folder containing the image. The dialog will already have the folder selected, so just clicking  "Open" is all you need to do.</p>
+                <p>Podcast Chapters remembers which folders you've already given permission for, so you should rarely see this dialog if you keep your images in one place.</p>
+                <h4>Chapter rows</h4>
+                <p>Only chapter title and start time is mandatory.</p>
+                <ul>
+                    <li><b>Chapter title</b></li>
+                    <li><b>Start time</b> - start time of the chapter, in MM:SS or HH:MM:SS format as needed</li>
+                    <li><b>URL</b> - URL the chapter links to</li>
+                    <li><b>Image URL</b> - the file system path to the chapter image</li>
+                    <li><b>Hidden</b> - true or false. Should the chapter be hidden? If left out, the chapter will not be hidden</li>
+                </ul>
+                <h4>Other rows</h4>
+                <p>Other rows contain other podcast information. Each row begins with an identifier, followed by the value.</p>
+                <ul>
+                    <li><b>PODCAST</b> - the title of the podcast</li>
+                    <li><b>AUTHOR</b> - the author of the podcast</li>
+                    <li><b>TITLE</b> - the episode tidle</li>
+                    <li><b>DESCRIPTION</b> - the episode description</li>
+                    <li><b>YEAR</b> - release year of the episode</li>
+                    <li><b>ARTWORK</b> - the file system path to the episode artwork</li>
+                </ul>
+                <h4>Example</h4>
+                <p>The last three lines are chapters.</p>
+                <table class="csvExampleTable">
+                    <tr><td>PODCAST</td><td>The Fantastic Example Podcast</td><td></td><td></td><td></td></tr>
+                    <tr><td>AUTHOR</td><td>Fredrik Björeman</td><td></td><td></td><td></td></tr>
+                    <tr><td>TITLE</td><td>34 - The Magic of CSV Import</td><td></td><td></td><td></td></tr>
+                    <tr><td>DESCRIPTION</td><td>"Fredrik, in the best of moods, imports podcast episode data from CSV files."</td><td></td><td></td><td></td></tr>
+                    <tr><td>YEAR</td><td>2020</td><td></td><td></td><td></td></tr>
+                    <tr><td>ARTWORK</td><td>/Users/fredrik/Desktop/massiveArtwork.png</td><td></td><td></td><td></td></tr>
+                    <tr><td>Introduction</td><td>00:00</td><td></td><td>/Users/fredrik/Desktop/chapter1Image.png</td><td>false</td></tr>
+                    <tr><td>Some Background</td><td>05:34</td><td>https://en.wikipedia.org/wiki/Comma-separated_values</td><td></td><td></td></tr>
+                    <tr><td>Final Words</td><td>01:35:14</td><td></td><td></td><td>true</td></tr>
+                </table>
+            </div>      
+        </div>
+    </div>
+</body>
+</html>

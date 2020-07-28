@@ -95,3 +95,12 @@ body {
 h3>small {
   padding-left: 10px;
 }
+
+.csvExampleTable {
+  width: 100%;
+}
+
+.csvExampleTable td {
+  border: solid black 1px;
+  padding: 3px;
+}
