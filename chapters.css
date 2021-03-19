@@ -3,6 +3,7 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #eee;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -20,7 +21,6 @@ body {
 /* Custom page footer */
 .footer {
   padding-top: 20px;
-  color: #777;
 }
 
 /* Customize container */
@@ -36,7 +36,6 @@ body {
 /* Main marketing message and sign up button */
 .jumbotron {
   text-align: center;
-  background-color: white;
 }
 .jumbotron .btn {
   padding: 14px 24px;
@@ -103,4 +102,32 @@ h3>small {
 .csvExampleTable td {
   border: solid black 1px;
   padding: 3px;
+}
+
+
+.light {
+  display: block;
+}
+
+.dark {
+  display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  .dark   { display: block; }
+  .light { display: none; }
+
+  body {
+    background-color: #333;
+    color: #999;
+  }
+
+  .jumbotron {
+    background-color: unset;
+  }
+
+  hr {
+    color: #999;
+    border-top: 1px solid #aaa;
+  }
 }
