@@ -3,7 +3,7 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #eee;
+  background-color: #fff;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -105,6 +105,10 @@ h3>small {
 }
 
 
+.jumbotron {
+  background-color: unset;
+}
+
 .light {
   display: block;
 }
@@ -120,10 +124,6 @@ h3>small {
   body {
     background-color: #333;
     color: #999;
-  }
-
-  .jumbotron {
-    background-color: unset;
   }
 
   hr {
