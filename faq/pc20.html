@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../chapters.css">
+    <title>Podcast Chapters &mdash; Frequently Asked Questions</title>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row marketing">
+            <div class="col-xs-12" style="text-align: center;">
+                <h1>Podcast Chapters</h1>
+                <h2>Generating RSS tags</h2>
+                <br><br>
+            </div>
+            <div class="col-xs-12">
+                <p>Thanks for your interest in Podcast Chapters. If your question isn't answered in this FAQ, feel free to reach out to me on <a href="https://twitter.com/bjoreman">Twitter</a> and I'll be sure to help you out.</p>
+                <p><a href="../index.html">← Return to Podcast Chapters</a></p>
+            </div>
+        </div>
+        <hr>
+        <div class="row marketing">
+            <div class="col-sm-12">
+                <h3>What is this all about?</h3>
+                <p>Podcast Chapters 3.0 can generate RSS tags for the <a href="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md">podcast namespace</a>. If your podcast hosting solution doesn't yet support these tags, but does allow you to add tags to your RSS feed, you can create the tags straight from Podcast Chapters.</p>
+                <p>This is the very first version. If this is useful to you, I have many ideas for making things even better and more integrated with the rest of the app in the future. For example: specifying multiple soundbites, finer adjustment of soundbites, saving and re-use of all information. <a href="https://twitter.com/bjoreman">Get in touch</a> and tell me what you like or would like to see changed!</p>
+            </div>
+            <div class="col-sm-12">
+                <h3>How does it work?</h3>
+                <p>Use the new "RSS Tags" window to enter the information relevant to you.</p>
+                <p class="light"><img src="../images/faq/tags-light.png"></p>
+                <p class="dark"><img src="../images/faq/tags-dark.png"></p>
+                <p>For more information about any of the tags, <a href="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md">see the specification</a>.</p>
+                <ul>
+                    <li>Season has a simple number, and optionally also a name to display instead of the number</li>
+                    <li>Episode is much the same, but it's recommended to keep the display name very short (32 characters or less)</li>
+                    <li>People are participants in the episode. Apart from name (or alias), you can note their role in the episode, as well as a URL and a separate URL to an image</li>
+                    <li>A soundbite is a nice clip from the episode. Currently, you simply select a chapter</li>
+                    <li>Location has a descriptive text, as exact or fanciful as you like, and optionally GEO coordinates as well as an Open Street Map identifier. The button to the right simply opens Open Street Map in your browser to help you find coordinates if you want them</li>
+                    <li>Transcripts are just that - text transcriptions of your episode. You can enter the URL to the transcript file, its MIME type, its language, and whether the file contains time-coded closed captions or not</li>
+                </ul>
+                <p>Once you're happy, either click "Export" to write the tags to an xml file, or hit the <img class="light" src="../images/faq/copy-clipboard.png"> <img class="dark" style="display: inline" src="../images/faq/copy-clipboard-dark.png"> button on the left side to skip the file and send the tags straight to the clipboard.</p>
+                <h4>Then what?</h4>
+                <p>Then it depends on where and how your RSS feed is hosted and created. The tags created go into the feed item for an individual episode. Libsyn, for example, has a nice text field for "Extra Tags" under the tab "Advanced" when you edit episode data:</p>
+                <p><img src="../images/faq/libsyn-extra.png"></p>
+                <p>Note that to be valid, your feed needs to add a podcast namespace declaration: xmlns:podcast="https://podcastindex.org/namespace/1.0". This is typically placed in the root (rss) tag of the document, but can be added to child elements too if necessary.</p>
+            </div>      
+        </div>
+    </div>
+</body>
+</html>
